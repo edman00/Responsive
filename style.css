@@ -1,0 +1,138 @@
+body {
+                    width: auto;
+                    height: auto;
+                    margin:auto;
+                    font: ;
+                    background-color: #e08104;
+                    font-size: 18px;
+                }
+                header{
+                    min-height: 10%;
+                    grid-area: header;
+                    background-color: #603E11;
+                    box-shadow: 0px 10px 15px rgba(96,62,17,0.5);
+                }
+                a {
+                    text-decoration: none;
+                    color: rgb(57, 46, 46);
+                }
+                h1 {
+                    margin: 0px;
+                    text-align: center;
+                    color: #e2870f;
+                }
+                main{
+                    grid-area: main;
+                    text-align: center;
+                    margin-top: 10px;
+                } 
+                #meny1 {
+                    grid-area: meny1;
+                    text-align: center;
+                    background-color: #603E11;
+                    color: #e2870f;
+                    margin: 5px;
+                }
+                 #meny2 {
+                    grid-area: meny2;
+                    text-align: center;
+                    background-color: #603E11;
+                    color: #e2870f;
+                    margin: 5px;
+                }
+                 #meny3 {
+                    grid-area: meny3;
+                    text-align: center;
+                    background-color: #603E11;
+                    color: #e2870f;
+                    margin: 5px;
+                }
+                footer{
+                    grid-area: footer;
+                    background:#603E11;
+                    text-align: center;
+                    color: #e2870f;
+                }
+                
+            @media screen and (min-width: 1000px) {    
+                #wrapper { 
+                    font-size: 200%;
+                    width: 100%;
+                    height: 100%;
+                    display:grid;
+                    grid-template-columns: 11.11% 11.11% 11.11% 11.11% 11.11% 11.11% 11.11% 11.11% 11.11%;
+                    grid-template-rows: 40px 40px 6.5% 6.5% 6.5% 6.5% 6.5% 6.5% 6.5% 6.5% 6.5% 6.5% 6.5% 6.5% 6.5% 6.5% ;
+                    grid-template-areas:
+                        "header header header header header header header header header"
+                        "header header header header header header header header header"
+                        "main main main main main main main main main"
+                        "main main main main main main main main main"
+                        "main main main main main main main main main"
+                        "main main main main main main main main main"
+                        "main main main main main main main main main"
+                        "main main main main main main main main main"
+                        "main main main main main main main main main"
+                        "main main main main main main main main main"
+                        "main main main main main main main main main"
+                        "meny1 meny1 meny1 meny2 meny2 meny2 meny3 meny3 meny3"
+                        "meny1 meny1 meny1 meny2 meny2 meny2 meny3 meny3 meny3"
+                        "meny1 meny1 meny1 meny2 meny2 meny2 meny3 meny3 meny3"
+                        "footer footer footer footer footer footer footer footer footer"
+                        "footer footer footer footer footer footer footer footer footer";
+                }
+            }
+            @media screen and (max-width: 1000px) {    
+                #wrapper { 
+                    width: 100%;
+                    height: 100%;
+                    display:grid;
+                    grid-template-columns: 11.11% 11.11% 11.11% 11.11% 11.11% 11.11% 11.11% 11.11% 11.11%;
+                    grid-template-rows: 40px 6.25% 6.25% 6.25% 6.25% 6.25% 6.25% 6.25% 6.25% 6.25% 6.25% 6.25% 6.25% 6.25% 6.25% 6.25%;
+                    grid-template-areas:
+                        "header header header header header header header header header"
+                        "main main main main main main main main main"
+                        "main main main main main main main main main"
+                        "main main main main main main main main main"
+                        "main main main main main main main main main"
+                        "main main main main main main main main main"
+                        "main main main main main main main main main"
+                        "main main main main main main main main main"
+                        "meny1 meny1 meny1 meny1 meny1 meny1 meny1 meny1 meny1"
+                        "meny1 meny1 meny1 meny1 meny1 meny1 meny1 meny1 meny1"
+                        "meny2 meny2 meny2 meny2 meny2 meny2 meny2 meny2 meny2"
+                        "meny2 meny2 meny2 meny2 meny2 meny2 meny2 meny2 meny2"
+                        "meny3 meny3 meny3 meny3 meny3 meny3 meny3 meny3 meny3"
+                        "meny3 meny3 meny3 meny3 meny3 meny3 meny3 meny3 meny3"
+                        "footer footer footer footer footer footer footer footer footer"
+                        "footer footer footer footer footer footer footer footer footer";
+                }
+                p {
+                    font-size: 23px;
+                }
+            }
+            @media screen and (max-width: 560px) {    
+                #wrapper { 
+                    width: 100%;
+                    height: 100%;
+                    display:grid;
+                    grid-template-columns: 11.11% 11.11% 11.11% 11.11% 11.11% 11.11% 11.11% 11.11% 11.11%;
+                    grid-template-rows: 40px 6.25% 6.25% 6.25% 6.25% 6.25% 6.25% 6.25% 6.25% 6.25% 6.25% 6.25% 6.25% 6.25% 6.25% 6.25%;
+                    grid-template-areas:
+                        "header header header header header header header header header"
+                        "main main main main main main main main main"
+                        "main main main main main main main main main"
+                        "main main main main main main main main main"
+                        "main main main main main main main main main"
+                        "main main main main main main main main main"
+                        "main main main main main main main main main"
+                        "main main main main main main main main main"
+                        "main main main main main main main main main"
+                        "meny1 meny1 meny1 meny1 meny1 meny1 meny1 meny1 meny1"
+                        "meny1 meny1 meny1 meny1 meny1 meny1 meny1 meny1 meny1"
+                        "meny2 meny2 meny2 meny2 meny2 meny2 meny2 meny2 meny2"
+                        "meny2 meny2 meny2 meny2 meny2 meny2 meny2 meny2 meny2"
+                        "meny3 meny3 meny3 meny3 meny3 meny3 meny3 meny3 meny3"
+                        "meny3 meny3 meny3 meny3 meny3 meny3 meny3 meny3 meny3"
+                        "footer footer footer footer footer footer footer footer footer";
+                }
+            }
